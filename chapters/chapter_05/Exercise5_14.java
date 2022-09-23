@@ -16,22 +16,14 @@ public class Exercise5_14 {
 
         while(d>2) {
 
-
             if (k % d == 0 && l % d == 0) {
                 System.out.println(d + " is the gcd of " + k + " and " + l);
-
             }
             d--;
-
-
             }
         if (k % d != 0 && l % d != 0) {
 
             System.out.println("1 is the gcd of " + k + " and " + l);
-
-
         }
-
-
     }
 }
