@@ -1,0 +1,30 @@
+package chapters.chapter_02;
+
+import java.util.Scanner;
+
+public class Exercise2_12 {
+
+	public static void main(String[] args) {
+
+		Scanner input = new Scanner(System.in);
+		
+		System.out.print("Enter speed and acceleration : ");
+		
+		double v = input.nextDouble();
+		double a = input.nextDouble();
+		
+		double length = (v * v) / (2 * a);
+		input.close();
+		
+		System.out.println("The minimum runway length for this plane is " + length);
+	}
+
+}
+
+Enter speed and acceleration : 60
+3.5
+Exception in thread "main" java.util.InputMismatchException
+	at java.base/java.util.Scanner.throwFor(Scanner.java:943)
+	at java.base/java.util.Scanner.next(Scanner.java:1598)
+	at java.base/java.util.Scanner.nextDouble(Scanner.java:2569)
+	at chapters.chapter_02.Exercise2_12.main(Exercise2_12.java:14)
